@@ -1,17 +1,18 @@
-
 import { combineReducers } from 'redux'
 
-const PrimaryReducer = (state = {}, action = {}) => {
+const PrimaryReducer = (state = {
+  amount: 3000
+}, action = {}) => {
   switch (action.type) {
     case 'INCREMENT':
       return {
         ...state,
-        count: state.count + 1
+        amount: state.amount + 1
       };
     case 'DECREMENT':
       return {
         ...state,
-        count: state.count - 1
+        amount: state.amount - 1
       };
     default:
       return state;

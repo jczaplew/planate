@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, {
   Component,
   StyleSheet,
@@ -13,10 +7,11 @@ import React, {
 
 export default class Planate extends Component {
   render() {
+    const { amount } = this.props
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native! {amount}
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
